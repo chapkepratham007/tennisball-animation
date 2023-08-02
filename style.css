@@ -35,3 +35,38 @@ body{
         transform:rotate(0deg);
     }
 }
+@media screen and (max-width:480px){
+    .tennisball{
+        width:70px;
+        position: absolute;
+        animation: tennis1 7s linear infinite alternate;
+    }
+    @keyframes tennis1{
+        0%{
+            top:0vh;
+            left:0px;
+            transform: rotate(0deg);
+        }
+        25%{
+            left:80px;
+            top:90vh;
+           transform: rotate(360deg);
+        }
+        50%{
+            left:170px;
+            top:0vh;
+            transform:rotate(0deg);
+        }
+        75%{
+            top:90vh;
+            left:260px;;
+            transform:rotate(360deg);
+        }
+        100%{
+            top:0vh;
+            left:350px;
+            transform:rotate(0deg);
+        }
+    }
+
+}
